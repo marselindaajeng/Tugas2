@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/ungu"
+
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Calculator"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp"
+        android:textSize="35dp"/>
+
+    <EditText
+        android:id="@+id/text"
+        android:hint="Masukkan Angka"
+        android:textSize="25dp"
+        android:layout_below="@+id/title"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/sin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:hint="SIN"
+        android:textSize="45dp"
+        android:background="#DDA0DD"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/cos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_toRightOf="@+id/sin"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#DDA0DD"
+        android:hint="COS"
+        android:textSize="45dp" />
+
+    <Button
+        android:id="@+id/tan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="TAN"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#DDA0DD"
+        android:layout_toRightOf="@+id/cos"
+        android:textSize="45dp"/>
+
+    <Button
+        android:id="@+id/csc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sin"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="15dp"
+        android:background="#DDA0DD"
+        android:hint="CSC"
+        android:textSize="43dp" />
+
+    <Button
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sin"
+        android:layout_toRightOf="@+id/csc"
+        android:background="#DDA0DD"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:hint="SEC"
+        android:textSize="43dp" />
+
+    <Button
+        android:id="@+id/cot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sin"
+        android:background="#DDA0DD"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/sec"
+        android:hint="COT"
+        android:textSize="43dp" />
+
+    <Button
+        android:id="@+id/logaritma"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sec"
+        android:hint="LOGARITMA"
+        android:background="#DDA0DD"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="30dp"
+        android:layout_below="@+id/logaritma"
+        android:textAlignment="center"/>
+
+</RelativeLayout>
